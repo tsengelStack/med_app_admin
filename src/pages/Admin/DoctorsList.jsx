@@ -3,7 +3,7 @@ import { AdminContext } from '../../context/AdminContext'
 
 const DoctorsList = () => {
 
-  const { doctors, changeAvailability , aToken , getAllDoctors} = useContext(AdminContext)
+  const { doctors, changeAvailability , aToken , getAllDoctors, removeDoctor} = useContext(AdminContext)
 
   useEffect(() => {
     if (aToken) {
@@ -25,6 +25,13 @@ const DoctorsList = () => {
                 <input onChange={()=>changeAvailability(item._id)} type="checkbox" checked={item.available} />
                 <p>Боломжтой</p>
               </div>
+              {/* Remove Doctor Button */}
+              <button
+                className="mt-2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700"
+                onClick={() => removeDoctor(item._id)}
+              >
+                Устгах
+              </button>
             </div>
           </div>
         ))}

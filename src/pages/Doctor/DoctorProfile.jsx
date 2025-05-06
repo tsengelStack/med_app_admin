@@ -114,6 +114,7 @@ import { DoctorContext } from '../../context/DoctorContext'
 import { AppContext } from '../../context/AppContext'
 import { toast } from 'react-toastify'
 import axios from 'axios'
+import { assets } from '../../assets/assets'
 
 
 const DoctorProfile = () => {

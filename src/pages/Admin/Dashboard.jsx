@@ -68,7 +68,7 @@ const Dashboard = () => {
         <button
           onClick={downloadAppointmentsPDF}
           disabled={loading}
-          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-xl shadow-md transition disabled:opacity-50"
+          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 mb-5 rounded-xl shadow-md transition disabled:opacity-50"
         >
           {loading ? (
             <svg
